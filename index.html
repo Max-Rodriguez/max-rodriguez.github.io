@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Max Rodriguez</title>
+        <link rel="icon" href="logo.png">
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <meta name='twitter:card' content='summary'>
+        <meta name='twitter:site' content='@_Max_Rodriguez'>
+        <meta name='twitter:creator' content='@_Max_Rodriguez'>
+
+        <meta property='og:description' content='Max&#39;s Personal Website'>
+        <meta property='og:site_name' content='Max&#39;s Personal Website'>
+        <meta property='og:type' content='website'>
+        <meta property='og:updated_time' content='2021-04-22T9:29:33-07:00'/>
+
+    </head>
+
+    <script language="javascript">
+
+        // JS in case I need advanced scaling 
+
+    </script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        ::-moz-selection {
+            background-color: transparent;
+        }
+
+        ::selection {
+            background-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            background-color: #161616;
+        }
+
+        .top {
+            position: fixed;
+            width: 100%;
+        }
+
+        .header {
+            background-color: #6e6e6e;
+            padding: 1%;
+            vertical-align: middle;
+        }
+
+        /* Mobile Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            #title {
+                width: 100%;
+                margin: 0 auto;
+                display: flex; /* Fill in Margin */
+                justify-content: center; /* Even Margins */
+                padding: 1%;
+            }
+
+        }
+
+        /* Tablet/Desktop Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            #title {
+                width: 100%;
+                margin: 0 auto;
+                display: flex; /* Fill in Margin */
+                justify-content: center; /* Even Margins */
+                padding: 0%;
+            }
+
+        }
+
+
+        /* Mobile Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            .author {
+                font-family: 'Noto Sans', sans-serif;
+                color: white;
+                font-size: 170%;
+                margin: 0;
+                margin-top: 1.3%;
+                margin-left: 1.7%;
+            }
+
+        }
+
+        /* Tablet/Desktop Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            .author {
+                font-family: 'Noto Sans', sans-serif;
+                color: white;
+                font-size: 175%;
+                margin: 0;
+                margin-top: 0.35%;
+                margin-left: 0.5%;
+            }
+
+        }
+
+        .navbar {
+            background-color: #494949;
+            text-decoration: none;
+        }
+
+        #contact {
+            display: flex; /* Fill in Margin */
+            justify-content: center; /* Even Margins */
+        }
+
+        .impression {
+            background-color: #161616;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0.1%;
+        }
+
+        /* Mobile Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            .navbar li {
+                display: inline-block;
+                text-decoration: none;
+                margin: 2%;
+                margin-right: 2.3%; /* Contact Links Spacing */
+            }
+
+            #social_links li {
+                display: inline-block;
+                text-decoration: none;
+                margin: 0.5%;
+                margin-right: 0.5%; /* Contact Links Spacing */
+            }
+
+        }
+
+        /* Tablet/Desktop Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            .navbar li {
+                display: inline-block;
+                text-decoration: none;
+                margin: 0.5%;
+                margin-right: 0.5%; /* Contact Links Spacing */
+            }
+
+            #social_links li {
+                display: inline-block;
+                text-decoration: none;
+                margin: 0.5%;
+                margin-right: 0.5%; /* Contact Links Spacing */
+            }
+
+        }
+
+        a {
+            color: white;
+            background-color: none;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+            display: flex;
+        }
+
+        a p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover {
+            opacity: 60%;
+        }
+
+        .footer {
+            background-color: #383838;
+            font-family: arial;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Mobile Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            .copyright {
+                padding-top: 2%;
+                padding-bottom: 1.5%;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #b3b3b3;
+                font-size: 95%;
+            }
+
+        }
+
+        /* Tablet/Desktop Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            .copyright {
+                padding-top: .4%;
+                padding-bottom: .2%;
+                width: 80%;
+                text-align: left;
+                margin: 0 auto;
+                color: #b3b3b3;
+            }
+
+        }
+
+        /* Mobile Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            .portfolio {
+                background-color: #161616;
+                font-family: 'Open Sans', sans-serif;
+                width: 95%;
+                margin: 0 auto;
+                text-align: center;
+                color: rgb(230, 230, 230);
+            }
+
+        }
+
+        /* Tablet/Desktop Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            .portfolio {
+                background-color: #161616;
+                font-family: 'Open Sans', sans-serif;
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                color: rgb(230, 230, 230);
+            }
+
+        }
+
+        /* Portfolio Sections */
+
+        #about_me {
+            margin-top: 3%;
+            margin-bottom: 5%;
+        }
+
+        #education {
+            margin-bottom: 6%;
+        }
+
+        #my_skills {
+            margin-bottom: 10%;
+        }
+
+        #my_skills li {
+            list-style-type: square;
+            text-align: left;
+        }
+        
+        #my_skills div {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .my_projects {
+            margin-bottom: 10%;
+        }
+
+        .my_projects article {
+            margin-top: 8%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .my_projects article h1 {
+            font-size: 200%;
+        }
+
+        .my_projects article a {
+            display: block;
+            color: #5ea9ff;
+        }
+
+        #job_experience {
+            margin-bottom: 6%;
+        }
+
+        #social_links {
+            margin-bottom: 17%;
+        }
+
+        .img_bigger_container_lol {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        /* Mobile Image Scaling */
+
+        @media only screen and (min-width: 10px) {
+
+            .img_container {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /* Tablet/Desktop Image Scaling */
+
+        @media only screen and (min-width: 700px) {
+
+            .img_container {
+                width: 70%;
+                height: 100%;
+            }
+
+        }
+
+    </style>
+
+    <body>
+
+        <div class="top">
+
+            <div class="header">
+
+                <div id="title">
+
+                    <img src="logo.png" alt="Site Logo" width="47px" height="47px">
+                    <h1 class="author">Max Rodriguez</h1>
+
+                </div>
+
+            </div>
+
+            <div class="navbar">
+
+                <ul id="contact">
+
+                    <li>
+                        <a href="https://www.twitter.com/_Max_Rodriguez">
+                            <img src="twitter.png" alt="Twitter Logo" width="22px" height="22px">
+                            <p>&nbsp Twitter</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.github.com/Max-Rodriguez">
+                            <img src="github.png" alt="Github Logo" width="22px" height="22px">
+                            <p>&nbsp Github</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:maxrcoppola@gmail.com">
+                            <img src="email.png" alt="Email Icon" width="22px" height="22px">
+                            <p>&nbsp Email</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="impression">
+
+            <picture>
+
+                <source srcset="homescreen_MOBILE.jpg" media="(max-width: 750px)">
+                <source srcset="homescreen_TABLET.jpg" media="(max-width: 1400px)">
+                <source srcset="homescreen_DESKTOP.jpg">
+                <img src="homescreen.jpg" alt="Home" width=100% height=auto>
+
+            </picture>
+
+        </div>
+
+        <div class="portfolio">
+
+            <section id="about_me">
+
+                <h1 style="font-size: 235%;">About Me</h1>
+
+                <h3>
+                    Hello, my name is Max, 
+                    I practice programming as a hobby and intend to learn and develop  
+                    software for a living in the near future.
+                    I started programming in 2018, and have been learning more since.
+                    Until about a year ago, I have been taking this hobby more seriously and 
+                    making some fun projects. 
+                    I'm a huge fan of Linux operating systems and use Fedora Linux as my
+                    daily workstation operating system.
+                    This website holds a portfolio of my favorite projects that 
+                    vary in different programming languages.
+                </h3>
+
+            </section>
+
+            <section id="education">
+
+                <h1 style="font-size: 235%;">Education</h1>
+
+                <h3>
+                    I am currently enrolled at a High School. In the upcoming Fall 2021 semester 
+                    I will be starting concurrent enrollment at an online college to 
+                    start learning for my Computer Science degree.
+                </h3>
+
+            </section>
+
+            <section id="my_skills">
+
+                <h1 style="font-size: 230%;">My Skills</h1>
+
+                <div>
+
+                    <ul>
+                        <li>Knowledge of Object-Oriented Programming</li>
+                        <li>Intermediate experience with Python 3</li>
+                        <li>Bilingual, Fluent in English and Spanish</li>
+                        <li>Good Verbal and Written Communication</li>
+                        <li>Able to Write Clean & Easy to Read Code</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="my_projects">
+
+                <h1 style="font-size: 300%;">My Projects</h1>
+                
+                <article>
+
+                    <h1>Python Twitter Bot</h1>
+
+                    <div class="img_bigger_container_lol">
+                        <div class="img_container">
+                            <img src="Twitter_bot_project.png" width="100%" height="100%">
+                        </div>
+                    </div>
+
+                    <h2>
+                        This is a twitter bot I made in Python. I learnt how to use a new library
+                        in Python and how to request from a Rest API endpoint and use that information
+                        to generate actions and output from my program.
+                    </h2>
+
+                    <h2>
+                        <a href="https://www.github.com/Max-Rodriguez/Silly-Meter-Twitter">
+                        Link to Project Source Code</a>
+                    </h2>
+
+                </article>
+
+                <article>
+
+                    <h1>C-Pong</h1>
+
+                    <div class="img_bigger_container_lol">
+                        <div class="img_container">
+                            <img src="cpong.png" width="100%" height="100%">
+                        </div>
+                    </div>
+
+                    <h2>
+                        This is a Pong game I wrote in C. Not only did I learn a new language, 
+                        but I also learnt how to make a game with functional programming and no 
+                        object oriented programming with objects. This project helped me understand 
+                        the C language and also the harder path to using a 2D graphics library.
+                    </h2>
+
+                    <h2>
+                        <a href="https://github.com/Max-Rodriguez/C-Pong">
+                        Link to Project Source Code</a>
+                    </h2>
+
+                </article>
+
+                <article>
+
+                    <h1>NodeJS Web Server</h1>
+
+                    <div class="img_bigger_container_lol">
+                        <div class="img_container">
+                            <img src="Node_Server.png" width="100%" height="100%">
+                        </div>
+                    </div>
+
+                    <h2>
+                        This is a fully functional website server I wrote in javascript 
+                        using the NodeJS environment. I learnt how to route and pipe site 
+                        resources and pages using Javascript. I also explored a bit more about 
+                        the basic HTTP responses and protocol. This is my first server software.
+                    </h2>
+
+                    <h2>
+                        <a href="https://www.github.com/Max-Rodriguez/NodeJS-WebServer">
+                        Link to Project Source Code</a>
+                    </h2>
+
+                </article>
+
+            </section>
+
+            <section id="job_experience" style="margin-left: 10%; margin-right: 10%;">
+
+                <h1 style="font-size: 230%;">Job Experience</h1>
+
+                <h3>
+                    At the moment I have not gotten my first job yet, but I have built up my portfolio
+                    and developed this website to apply at an organization and begin my career.
+                </h3>
+
+            </section>
+
+            <section id="social_links">
+
+                <h1 style="font-size: 240%;">Contact Me</h1>
+
+                <li style="padding-left: 1%;">
+                    <a href="https://www.twitter.com/_Max_Rodriguez">
+                        <img src="twitter.png" alt="Twitter Logo" width="40px" height="40px">
+                        <p style="font-size: 200%;">&nbsp Twitter</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.github.com/Max-Rodriguez">
+                        <img src="github.png" alt="Github Logo" width="40px" height="40px">
+                        <p style="font-size: 200%;">&nbsp Github</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:maxrcoppola@gmail.com">
+                        <img src="email.png" alt="Email Icon" width="40px" height="40px">
+                        <p style="font-size: 200%;">&nbsp Email</p>
+                    </a>
+                </li>
+
+                <br></br>
+                <h3>Thank you for your time!</h3>
+
+            </section>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="copyright">
+                Copyright &copy; 2021 Max Rodriguez. All rights reserved.
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
