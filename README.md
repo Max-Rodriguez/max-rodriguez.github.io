@@ -1,2 +1,3 @@
-# maxr.me | Portfolio Website
-### This repository is my Github Pages site! Check it out at maxr.me!
+# Portfolio Website ( [maxr.me](https://maxr.me) )
+### This repository holds my personal website that is deployed using Github Pages.
+### Go check out my website at [https://maxr.me](https://maxr.me).
