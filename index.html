@@ -127,17 +127,6 @@
             display: block;
             color: #5ea9ff;
         }
-        #job_experience {
-            margin-bottom: 6%;
-            margin-top: 20%;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        #job_experience a {
-            display: block;
-            color: #5ea9ff;
-            font-size: 90%;
-        }
         .img_bigger_container_lol {
             width: 100%;
             display: flex;
@@ -191,7 +180,7 @@
         }
         #social_links {
             margin-top: 10%;
-            margin-bottom: 40%;
+            margin-bottom: 15%;
         }
         #social_links p {
             font-size: 150%;
@@ -208,6 +197,34 @@
         }
         h3 {
             font-size: 100%;
+        }
+        #job_experience {
+            margin-bottom: 6%;
+            margin-top: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        #job_experience a {
+            display: block;
+            color: #5ea9ff;
+            font-size: 90%;
+        }
+        #job_experience table {
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+        #job_experience tr {
+            width: 100%;
+        }
+        #job_experience th, td {
+            word-wrap: break-word;
+            overflow-x: hidden;
+            text-align: left;
+            padding: 2%;
+            border: 1px solid #939393;
         }
 
         /* Tablet/Desktop Scaling */
@@ -235,6 +252,11 @@
             }
             #job_experience {
                 margin-top: 0%;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            #job_experience th, td {
+                white-space: nowrap;
             }
             .portfolio {
                 width: 60%;
@@ -251,7 +273,7 @@
             }
             #social_links {
                 margin-top: 0%;
-                margin-bottom: 9%;
+                margin-bottom: 7%;
             }
             #social_links p {
                 font-size: 200%;
@@ -479,9 +501,20 @@
 
                 <h1 style="font-size: 230%;">Job Experience</h1>
 
-                <h3>
-			        I currently don't have an employment history.
-                </h3>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Employment Date</th>
+                        <th>End Date</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://codingwithkids.com">Coding With Kids</a></td>
+                        <td>Coding Instructor</td>
+                        <td>July 12, 2022</td>
+                        <td>Present</td>
+                    </tr>
+                </table>
 
             </section>
 
